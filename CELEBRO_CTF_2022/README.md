@@ -24,7 +24,7 @@ Using Spectral Analysis (FFT) [TOOL](https://audiotoolset.com/spectral-analysis)
 
 ## MISC/WEB - Open the door
 
-* Opened Directory Scanner: \
+* **Opened Directory Scanner**:  
 	dirb result:
 	---- Scanning URL: https://ctf-door.herokuapp.com/ ----
 	
@@ -32,14 +32,16 @@ Using Spectral Analysis (FFT) [TOOL](https://audiotoolset.com/spectral-analysis)
 	+ https://ctf-door.herokuapp.com/solved (CODE:400|SIZE:12)                                                                                                                      
 	+ https://ctf-door.herokuapp.com/start (CODE:200|SIZE:27) 
 
-
-single blink incorrect pin digit
-double blink correnct pin digit
+* Source code of the website didn't give us any hint.
+* After many attempts we figured out that when entering the pin on the lock:  
+	+ `single blink` means **incorrect** pin digit
+	+ `double blink` means **correct** pin digit
+* Above assumptions allowed us to open the lock and get the flag
                                                             
 
 ## MISTERY GRAPHIC
-ESITERIC PROGRAMMING LANGUAGE
+![MisteryGraphic](MisteryGraphics.png)  
+After research we found out that graphic describes **Esoteric programming language [PIET](https://esolangs.org/wiki/Piet)**   
+Using [IDE](https://www.bertnase.de/npiet/) we can execute that code and get our flag.
 
-## HELLO WORD
-otworz plik w hexedit charakterystyczny upx 
 
