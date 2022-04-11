@@ -1,20 +1,19 @@
 #CELEBRO CTF 2022
 
 ###OSINT - Door in the picture
-Using google maps we found the correct street and found correct door
+![Tux, the Linux mascot](OSINT.2022.png)
+Using google and google maps we found the correct street and found correct door
 FLAG: ASSAABLOY[august]
 
 
 ###MISC - dino meme
-using strings we get interesting result:
+Using `strings` we get found interesting string in results`heywhatsthat.heic` 
 
-heywhatsthat.heic problably we should be interested in .heic insted of jpeg
-
-using binwalk we found the heywhatsthat.heic file inside. We extract it and the flag is
+Using `binwalk` we found the archive with `heywhatsthat.heic` file inside. We extract it and the flag is
 FLAG: ASSAABLOY[BarelyWarmedUp]
 ###MISC - evening traffic
 
-using Spectral Analysis (FFT) https://audiotoolset.com/spectral-analysis we find flag but it does not work
+Using Spectral Analysis (FFT) [lihttps://audiotoolset.com/spectral-analysis we find flag but it does not work
 
 flag: ASSAABLOY[3udAXhzUft]
 
