@@ -20,7 +20,8 @@ FLAG: `CIT{1234567shadowpasswd}`
 Hey! I'm sending you Damian Abramowicz files, password - his PESEL. Make sure you are using the right one. 
 PS. Don't look for CIT, I moved it to next file. This had... questionable security." In `HR_talk.json` we found pattern for Damian's pesel: `02XXXX35533`  
 ![pesel](img/pesel.png).  
-We generated wordlist for our usage using [exrex tool](https://github.com/asciimoo/exrex).
+We generated wordlist for our usage using [exrex tool](https://github.com/asciimoo/exrex). After some tries with bruteforcing we started changing the control sum. It turned out to be a sollution. With control sum 4 we found pesel:
+	`02220635534`. Inside bossfile is a FLAG: `CIT{SHHHARK&BRUTE}`
 
 ```python
 import exrex
@@ -39,7 +40,7 @@ def checkSum(pesel):
 
 result = list(exrex.generate('^02[0-1][0-9][0-3][0-9]35533$'))
 #result = [each[::-1] for each in result]
-result = [each for each in result if checkSum(each)]
+#result = [each for each in result if checkSum(each)]
 result = "\n".join(result)
 
 with open("wlist.txt", "w") as file:
@@ -60,7 +61,7 @@ Login successful
 Here comes the directory listing
 Mar 18 11:11 msg.txt
 ```
-Using 742CITEKL9090$$ we can extract new archive. We ended up with the same bossfile as in the folder1
+Using 742CITEKL9090$$ we can extract new archive. We ended up with the same bossfile as in the folder1.
 
 
 ## Folder 3:
