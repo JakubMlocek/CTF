@@ -15,9 +15,8 @@ Just convert heximal to ascii, answer: `hexadecimal or base16?`
 Just decrypt ROT13 (13 times cesar cipher) to ascii, anser: `Rotate me 13 places!`
 * `*@F DA:? >6 C:89E C@F?5 323J C:89E C@F?5 Wcf E:>6DX`
 Just decrypt ROT47 (47 times cesar cipher) to ascii, anser: `You spin me right round baby right round (47 times)`
-* ```- . .-.. . -.-. --- -- -- ..- -. .. -.-. .- - .. --- -.
-. -. -.-. --- -.. .. -. --.
-```
+* `- . .-.. . -.-. --- -- -- ..- -. .. -.-. .- - .. --- -.
+. -. -.-. --- -.. .. -. --.`
 Just convert morse to ascii, answer: `TELECOMMUNICATION  ENCODING`
 * `85 110 112 97 99 107 32 116 104 105 115 32 66 67 68`
 Just convert base10 to ascii, answer: `Unpack this BCD`  
