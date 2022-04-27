@@ -33,3 +33,16 @@ Just convert base10 to ascii, answer: `Unpack this BCD`
 ## Task 2
 
 I used spectrum analizer [Tool](https://audiotoolset.com/spectral-analysis) on given file. The output shows our flag: `Super Secret Message` ![spectrum](img/spectrum.png)
+
+## Task 3
+
+Using steghide `steghide extract -sf stegosteg.jpg` we extract steganopayload2248.txt file from given photo. Flag inside is: `SpaghettiSteg`  
+![steg](stegosteg.jpg)
+
+## Task 4
+
+Using `binwalk -e meme.jpg` we extracted archive from jpg. Inside we found a file `hackerchat.png`. 
+Moreover using `strings meme.jpg` we found out `AHH_YOU_FOUND_ME`  
+![hack](img/hack.png)
+![meme](meme.jpg)
+
