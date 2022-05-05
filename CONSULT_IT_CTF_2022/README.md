@@ -65,7 +65,7 @@ Using 742CITEKL9090$$ we can extract new archive. We ended up with the same boss
 
 
 ## Folder 3:
-* In chat we found out that PIN to DYM242 is a data of birth of Damian. We can grab it from his pesel.
+* Flag 1: In chat we found out that PIN to DYM242 is a data of birth of Damian. We can grab it from his pesel. Hint for the format is in `DYM242` (DDYYYYMM) so `06200202` is the pin. We get our Flag: `CIT{DYM_DONE_BOSS}`
 
 ## Folder 4:
 * Flag 1: Name of the cat is mentioned in chat as "Mr Link". Looking througth the photos we found a cat with LINCOLN cup below. `Licoln` is a password for folder 4 and flag hidden in `osint_reward.txt` is FLAG: `CIT{0sINTisYourP0wer!}`
