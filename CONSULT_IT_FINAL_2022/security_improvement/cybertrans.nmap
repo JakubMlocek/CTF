@@ -1,0 +1,23 @@
+# Nmap 7.80 scan initiated Mon Mar 14 08:52:07 2022 as: nmap -Pn -p- -sT -sV cybertrans.example
+Nmap scan report for cybertrans.example (192.168.12.34)
+Host is up (0.0065s latency).
+Other addresses for cybertrans.example (not scanned): ::1
+Not shown: 65522 closed ports
+PORT      STATE    SERVICE    VERSION
+21/tcp    open     ftp        vsftpd 2.3.4
+80/tcp    open     http       Apache httpd 2.4.46 ((Debian))
+111/tcp   open     rpcbind    2-4 (RPC #100000)
+443/tcp   open     ssl/ssl    Apache httpd (SSL-only mode)
+3306/tcp  open     mysql      MySQL 5.5.5-10.1.26-MariaDB-1
+4767/tcp  open     unknown
+4769/tcp  filtered unknown
+5037/tcp  open     unknown
+39381/tcp open     unknown
+39563/tcp open     webdav
+53013/tcp open     soap       gSOAP 2.8
+53014/tcp open     ssl/soap   gSOAP 2.8
+53113/tcp open     soap       gSOAP 2.8
+53114/tcp open     ssl/soap   gSOAP 2.8
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Mar 14 08:54:55 2022 -- 1 IP address (1 host up) scanned in 168.03 seconds

@@ -1,0 +1,17 @@
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+
+Defaults        env_reset
+Defaults        mail_badpass
+Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+root    ALL=(ALL:ALL) ALL
+%admin  ALL=(ALL) ALL
+%sudo   ALL=(ALL:ALL) ALL
+%support   ALL=(ALL:ALL)  /bin/bash, /usr/sbin/reboot, /usr/sbin/shutdown 
+%usermgmt  ALL=(ALL:ALL)  /usr/sbin/useradd, /usr/sbin/usermod, /usr/sbin/userdel
+%grpmgmt   ALL=(ALL:ALL)  /usr/sbin/groupadd, /usr/sbin/groupdel, /usr/sbin/groupmem, /usr/sbin/groupmod
+test     ALL=(ALL:ALL)    /tmp/scripts/test.sh
